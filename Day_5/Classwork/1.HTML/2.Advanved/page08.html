@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Tag</title>
+  </head>
+
+  <body>
+    <form action="">
+      <div>
+        <label for="fname">First Name</label>
+        <input
+          id="fname"
+          name="fname"
+          type="text"
+          placeholder="Enter First name"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="age">Age</label>
+        <input id="age" name="age" type="number" placeholder="Enter Age" />
+      </div>
+
+      <div>
+        <label for="mobile">Phone</label>
+        <input
+          id="mobile"
+          name="mobile"
+          minlength="7"
+          maxlength="10"
+          type="tel"
+          placeholder="Enter mobile no"
+        />
+      </div>
+
+      <div>
+        <input type="submit" value="save" />
+        <input type="reset" value="clear" />
+      </div>
+    </form>
+  </body>
+</html>

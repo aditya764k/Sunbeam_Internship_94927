@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input types</title>
+  </head>
+
+  <body>
+    <form action="">
+      <div>
+        <label for="">Gender : </label>
+        <!-- to select only 1 radio  button we have to
+             keep the value for name attribute same in both radio inputs  -->
+        <input type="radio" name="gender" value="Male" />Male
+        <input type="radio" name="gender" value="Female" />Female
+      </div>
+
+      <div>
+        <label for="">Favourite Languages : </label>
+        <input type="checkbox" name="checkboxC" /> C
+        <input type="checkbox" name="checkboxCPP" /> CPP
+        <input type="checkbox" name="checkboxJava" /> JAVA
+      </div>
+
+      <div>
+        <label for="">City</label>
+        <select name="city">
+          <option value="1">Pune</option>
+          <option value="2">Mumbai</option>
+          <option value="3">Banglore</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="">Address</label>
+        <textarea rows="4" name="address" id=""></textarea>
+      </div>
+
+      <input type="submit" value="save" />
+    </form>
+  </body>
+</html>

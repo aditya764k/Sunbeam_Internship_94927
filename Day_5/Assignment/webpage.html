@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunbeam Registration Form</title>
+</head>
+<body>
+    <div align="center">
+        <img src="images/image.png" alt="sunbeam logo"/>
+    </div>
+
+    <div align="center">
+        <h2>Sunbeam Registration Form</h2>
+    </div>
+
+    <div style="display: flex; justify-content: center; align-items: flex-start; margin-top: 20px;">
+        
+        <iframe width="650" height="315" 
+            src="https://www.youtube.com/embed/02q9aAVv1NI?si=NjU1BNj1waBCN3IY" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+        <form action= "/result.html" style="margin-left: 40px;">
+            
+            <table align="right">
+            <tbody>
+                <tr>
+                    <td> <label for="kname"><b>Name</b></label></td>
+                    <td>: <input type="text" id="kname" name="kname" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="date"><b> BirthDate</b> </label></td>
+                    <td>: <input type="date" id="date" name="date" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="kemail"><b> Email</b> </label></td>
+                    <td>: <input type="email" id="kemail" name="kemail" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="kpassword"><b> Password</b></label></td>
+                    <td>: <input type="password" id="kpassword" name="kpassword" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="kaddress"><b>Address</b></label></td>
+                    <td>: <textarea name="kaddress" id="kaddress" cols="30" rows="5" required>Address: 
+Hinjawadi - Kasarsai Rd, 
+Hinjawadi Phase II,
+Hinjawadi Rajiv Gandhi Infotech Park, 
+Hinjawadi, Pimpri-Chinchwad, 
+Maharashtra 411057</textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="gender"><b>Gender</b></label></td>
+                    <td>: <input type="radio" id="gender_m" name="gender" value="male" required> Male
+                          <input type="radio" id="gender_f" name="gender" value="female">Female</td>
+                </tr>
+
+                <tr>
+                    <td><label for="kphoto"><b>Upload Photo</b></label></td>
+                    <td>: <input type="file" id="kphoto" name="kphoto" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="kcource"><b>Select your Course</b></label></td>
+                    <td>: 
+                        <select name="kcource" id="kcource" required>
+                            <option value="java">Java</option>
+                            <option value="python">Python</option>
+                            <option value="cpp">CPP</option>
+                            <option value="csharp">C#</option>
+                            <option value="javascript">JavaScript</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label><b>Skill Set</b></label></td>
+                    <td>: 
+                        <input type="checkbox" name="ss" value="java"> Java
+                        <input type="checkbox" name="ss" value="cpp"> CPP
+                        <input type="checkbox" name="ss" value="os"> OS </td>       
+                </tr>
+
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Register">
+                        <input type="reset" value="Clear">
+                    </td>
+                </tr>
+            </tbody>
+            </table>
+        </form>
+    </div> <hr>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        /* Above 720px the css will be applied */
+        @media screen and (min-width:720px) {
+            body {
+                background-color: aqua;
+            }
+
+            #mobile {
+                display: none;
+            }
+        }
+
+        /* CSS will be applied upto 720px */
+        @media screen and (max-width:720px) {
+            body {
+                background-color: beige;
+            }
+
+            #desktop {
+                display: none;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 id="desktop">This is a Desktop page</h1>
+    <h1 id="mobile">This is a Mobile page</h1>
+</body>
+
+</html>
