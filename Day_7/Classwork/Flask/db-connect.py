@@ -2,10 +2,10 @@ import mysql.connector
 
 try:
     connection = mysql.connector.connect(
-        host = "127.0.0.1",   # Added quotes and fixed the IP
+        host = "127.0.0.1",   
         port = 3306,
         user = "root",
-        password = "manager", # Added the missing comma
+        password = "manager", 
         use_pure = True,
         database = "student"
     )

@@ -10,4 +10,9 @@ def homepage():
 def aboutpage():
     return "<html><body><h1>About Flask Server</h1></body></html>"
 
-server.run()
+@server.post('/marks/<int:mark>')
+def show_name(mark):
+    print(f"marks = {mark}")
+    return f"{mark} recieved"
+
+server.run(host='0.0.0.0',port = 4000,debug = True)
